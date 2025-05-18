@@ -3,16 +3,15 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
-  root: 'client',             // React source code lives here
+  root: 'client', 
   plugins: [react()],
   build: {
-    outDir: path.resolve(__dirname, 'client/dist'), // output build files here
+    outDir: path.resolve(__dirname, 'client/dist'), 
     emptyOutDir: true,
   },
   server: {
     port: 5173,
     open: true,
-    // Proxy API requests to your Express backend in dev mode
     proxy: {
       '/api': 'http://localhost:3000',
     },

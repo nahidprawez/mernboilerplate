@@ -12,5 +12,3 @@ logs
 # vite build output
 dist/
 
-# extensions build output
-extensions/*/build
