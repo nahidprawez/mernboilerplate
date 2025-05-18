@@ -1,0 +1,16 @@
+# Environment Configuration
+.env
+.env.*
+
+# Dependency directory
+node_modules
+
+# Logs
+logs
+*.log
+
+# vite build output
+dist/
+
+# extensions build output
+extensions/*/build
